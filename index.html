@@ -1,158 +1,87 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
+
 <head>
   <title>Ben Lusted | Sound Designer</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+  <script src="javascript.js"></script>
+
   <div id="navbar">
-    <ol id="navbar-options">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li>
-        <a href="#skills">Skills</a>
-      </li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ol>
-  </div>
-
-  <div id="filler"></div>
-  <div id="home">
-    <h1>Ben<br>Lusted</h1>
-    <h3>Sound Designer for Video Games.</h3>
-  </div>
-
-  <div id="filler"></div>
-  <br />
-
-  <div id="projects">
-    <h1> - My Work - </h1>
-
-    <div class="projectpanel" id="shotgunfarmers-proj">
-      <h2>Shotgun Farmers</h2>
-      <h3>Sound Design</h3>
-      <div id="shotgunfarmers-image">
-        <a href="http://www.shotgunfarmers.com" target="
-        "><img src="images/shotgunfarmers.png" alt="Shotgun Farmers" /></a>
-      </div>
-      <div id="shotgunfarmers-description">
-        <p>
-          <b>Shotgun Farmers</b> is an online multiplayer shooter where
-          missed shots grow guns. Fire your bullets into the ground to plant your ammo.
-          Reloading isn’t an option,
-          so grab one of the deadly crops planted by the bullets of you and your enemies.
-          Shot at by a sniper?
-          Well they just planted you your very own sniper gun to fire back with!
-
-
-          Harvest weapon plants quickly for more ammo or let them grow for a larger clip.
-        </p>
-        <h5>MEGASTORM Games - Freelancer</h5>
-      </div>
-    </div>
-    <div class="projectpanel" id="needforspeed-proj">
-      <div id="proj-title-nfs">
-        <h2>Need For Speed: Heat</h2>
-        <h3>Sound Design</h3>
-      </div>
-      <div id="needforspeed-image">
-        <a href="https://www.ea.com/games/need-for-speed/need-for-speed-heat" target="
-        ">
-          <img src="images/needforspeed.png" alt="Need For Speed: HEAT" />
-        </a>
-      </div>
-      <div id="needforspeed-description">
-        <p>
-          <b>Need for Speed Heat</b> is a racing game set in an open world environment
-          called Palm City, a fictionalised version of the city Miami,
-          Florida and its surrounding area...
-        </p>
-        <h5>Electronic Arts Vancouver - Contractor </h5>
-      </div>
-    </div>
-
-    <div id="filler"></div>
-    <p id="checkout">
-      Check out more of my work <a href="https://vimeo.com/thebenlusted" target="
-      "><b>here</b></a>
-    </p>
-  </div>
-  <div id="filler"></div><br /><br />
-  <div id="skills">
-    <h1> - Skills - </h1>
     <ul>
-      <li class="fas fa-headphones"><br />
-        <h4>Sound Design</h4>
-        <hr />
-        <p>
-          Designing sound effects for video games. Ambience, UI, and more.
-          Using different techniques such as synthesis and recorded layers
-          to achieve the perfect sound.
-        </p>
+      <li>
+        <a href="#home">home</a>
       </li>
-      <li class="fas fa-tools">
-        <h4>Middleware</h4>
-        <hr />
-        <p>
-          Extensive knowledge and experience with Wwise and FMOD.
-          Implementing and designing audio systems for games.
-        </p>
+      <li>
+        <a href="#projects">projects</a>
       </li>
-      <li class="fas fa-gamepad">
-        <h4>Game Engines</h4>
-        <hr />
-        <p>
-          Experience developing in Unity, Unreal Engine, Frostbite and GameMaker.
-          Programming audio logic with FMOD and Wwise, and developing my own games
-          from scratch.
-        </p>
+      <li>
+        <a href="#skills">skills</a>
       </li>
-      <li class="fas fa-record-vinyl">
-        <h4>Music Production</h4>
-        <hr />
-        <p>
-          Composing and producing electronic music. Mixing, mastering,
-          sound design, and live recording since 2008.
-        </p>
+      <li>
+        <a href="#about">about</a>
+      </li>
+      <li>
+        <a href="#contact">contact</a>
       </li>
     </ul>
   </div>
-  <div id="filler"></div>
-  <div id="about">
-    <div id="about-panel">
-      <h1>Who Am I?</h1>
-      <hr />
-      <p>
-        My name is Ben Lusted, and I am a sound designer for video games.
-        I have been designing sounds for video games since 2011, and have worked
-        on many different game-jam projects, and bigger ones such as Shotgun Farmers
-        and Need for Speed: Heat.
-        I am from Vancouver, British Columbia, and am always looking to work with
-        passionate teams to bring a voice to their vision.
-      </p>
+  <div id="home">
+    <div id="home-inner">
+      <div id=" benpic">
+        <img src="images/benpic.png" />
+      </div>
+      <h1>// ben lusted //</h1>
+      <h2>sound designer for video games</h2>
     </div>
   </div>
-  <div id="filler"></div>
-  <div id="contact">
-    <h1>Get In Touch!</h1>
-    <hr />
-    <p>
-      Email: blustedaudio@gmail.com<br />
-      Twitter: @thebenlusted <br />
-      Vimeo: vimeo.com/thebenlusted </p>
+
+  <div id="filler">
   </div>
-  <div id="filler"></div>
-  <footer>
-    <p>
-      Ben Lusted. <br />@thebenlusted. <br />2020.
-    </p>
-  </footer>
+
+  <div id="projects">
+
+    <div id="shotgunfarmers" class="hideme">
+      <div id="sf-inner">
+        <a href="http://www.shotgunfarmers.com" target="_blank"><img src="images/shotgunfarmers.png" /></a>
+        <h3>shotgun farmers</h3>
+        <p>
+          Shotgun Farmers is the online multiplayer shooter where missed shots
+          grow new guns! Fire your bullets into the ground to plant your ammo.
+          The longer it grows the more ammo you will get! Shot at by a sniper?
+          Well they just planted you your
+          very own sniper gun to fire back with!
+        </p>
+        <p style="font-weight:bold;padding-top:50px;">
+          sound designer <br />
+          megastorm games
+        </p>
+      </div>
+    </div>
+    <div id="needforspeed" class="hideme">
+      <div id="nfs-inner">
+        <a href="https://www.ea.com/games/need-for-speed/need-for-speed-heat" target="_blank"><img src="images/needforspeed.png" /></a>
+        <h3>need for speed: heat</h3>
+        <p>
+          <b>Need for Speed: Heat</b> is a open world racing game set in Palm City,
+          a fictional version of Miami, Florida. Build your rep, take part in races,
+          upgrade your car, and work your way up to compete in the Speedhunter Showdown.
+        </p>
+        <p style="font-weight:bold;padding-top:50px;">
+          sound designer<br />
+          electronic arts vancouver
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
