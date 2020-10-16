@@ -34,7 +34,7 @@ body {
   padding: 8px;
   padding-right:20px;
 
-  transition: all .6s;
+  transition: all .8s;
 }
 #navbar a:hover {
   background-color: #db4545;
@@ -84,6 +84,12 @@ body {
   padding-left: 260px;
   padding-right: 260px;
 }
+#projects h1 {
+  margin:0;
+  padding:0;
+  text-align: center;
+  padding-top:190px;
+}
 #projects img {
   width:100%;
   min-width: 100px;
@@ -113,6 +119,7 @@ body {
 }
 #sf-inner a {
   float:left;
+  padding-bottom: 120px;
 }
 #sf-inner p{
   float:right;
