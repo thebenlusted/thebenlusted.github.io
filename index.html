@@ -14,6 +14,19 @@
 <body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
   <script src="javascript.js"></script>
+  <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+
+  <!-- script for nav button -->
+  <script>
+    function openMenu() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
 
   <div id="navbar">
     <ul>
@@ -33,6 +46,18 @@
         <a href="#contact">contact</a>
       </li>
     </ul>
+  </div>
+  <div id="navbutton">
+    <div id="myLinks">
+      <a href="#home">home</a>
+      <a href="#projects">projects</a>
+      <a href="#skills">skills</a>
+      <a href="#about">about</a>
+      <a href="#contact">contact</a>
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+      <i class="fa fa-bars"></i>
+    </a>
   </div>
   <div id="home">
     <div id="home-inner">
@@ -54,7 +79,7 @@
         <a href="http://www.shotgunfarmers.com" target="_blank"><img src="images/shotgunfarmers.png" /></a>
         <h3>shotgun farmers</h3>
         <p>
-          Shotgun Farmers is the online multiplayer shooter where missed shots
+          <b>Shotgun Farmers</b> is the online multiplayer shooter where missed shots
           grow new guns! Fire your bullets into the ground to plant your ammo.
           The longer it grows the more ammo you will get! Shot at by a sniper?
           Well they just planted you your
@@ -81,7 +106,94 @@
         </p>
       </div>
     </div>
+    <div id="vimeowidget">
+      <h3>// my work on vimeo //</h3>
+      <div class="elfsight-app-82789a50-4131-4067-a448-dfb332e2bdb7"></div>
+    </div>
   </div>
+
+  <div id="skills">
+    <div id="skills-inner">
+      <h1>// skills //</h1>
+      <div id="skillpanel">
+        <span class="fas fa-headphones"></span>
+        <h3>sound design</h3>
+        <hr />
+        <p>
+          designing everything from weapons to monster roars, I do it all.
+          Using techniques like synthesis and layering recorded material,
+          I strive to achieve the perfect sound for each project.
+        </p>
+      </div>
+      <div id="skillpanel">
+        <span class="fas fa-record-vinyl"></span>
+        <h3>music</h3>
+        <hr />
+        <p>
+          producing music for myself and for video games is a huge part
+          of my work. After 11 years, I am still writing songs and uploading them
+          <a href="https://soundcloud.com/kollidemx" target="_blank">here.</a>
+          So, go check them out!
+        </p>
+      </div>
+      <div id="skillpanel">
+        <span class="fas fa-tools"></span>
+        <h3>implementation</h3>
+        <hr />
+        <p>
+          a vast knowledge of middleware tools like Wwise and FMOD. I enjoy
+          designing systems in these tools and translating them into the engine.
+          I have plenty of experience creating events for different things and
+          adding snapshots to fit the environments of the project, and also
+          adding adaptive music!
+        </p>
+      </div>
+      <div id="skillpanel">
+        <span class="fas fa-gamepad"></span>
+        <h3>game development</h3>
+        <hr />
+        <p>
+          i also have great experience working in game engines. I have programmed,
+          designed sound and music, created 3d/2d art, and built entire worlds in
+          Unity, Unreal Engine, GameMaker, and have had experience in CryEngine and Frostbite.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div id="about">
+    <div id="about-inner">
+      <h1>// who am i? //</h1>
+      <hr />
+      <p>
+        i am a sound designer based in Vancouver, Canada.
+        I have been designing sounds since 2011, and have thoroughly enjoyed it.
+        I have had the chance to work on titles like Need For Speed, and the hit Xbox title
+        Shotgun Farmers.
+      </p>
+    </div>
+  </div>
+
+  <div id="contact">
+    <div id="contact-inner">
+      <h1>// get in touch //</h1>
+      <hr />
+      <p>
+        blustedaudio@gmail.com<br />
+        vimeo.com/thebenlusted<br />
+        twitter.com/thebenlusted<br />
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      Ben Lusted. 2020. @thebenlusted
+    </p>
+    <a href="https://twitter.com/thebenlusted" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://vimeo.com/thebenlusted" target="_blank"><i class="fab fa-vimeo"></i></a>
+    <a href="https://soundcloud.com/kollidemx" target="_blank"><i class="fab fa-soundcloud"></i></a>
+  </footer>
 </body>
 
 </html>

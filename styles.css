@@ -47,6 +47,34 @@ body {
   padding-top: 24px;
 }
 
+#navbutton {
+  overflow: hidden;
+  position: fixed;
+  background-color:black;
+  max-width:120px;
+}
+#navbutton #myLinks {
+  display:none;
+}
+#navbutton a {
+  color:white;
+  padding:14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display:block;
+  font-family: 'Montserrat';
+}
+#navbutton a.icon {
+  display:block;
+  color:white;
+  right: 0;
+  top:0;
+  padding:20px;
+}
+#navbutton a:hover {
+  background-color:#db4545;
+}
+
 #home {
   text-align: center;
 }
@@ -152,12 +180,189 @@ h2 {
   font-size: 2vw;
 }
 
+#vimeowidget {
+  padding-top:200px;
+  width:100%;
+  text-align: center;
+  display:inline-block;
+}
+#vimeowidget h3 {
+  padding-bottom: 20px;
+}
+.elfsight-app-82789a50-4131-4067-a448-dfb332e2bdb7 {
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  width:800px;
+  position: absolute;
+  margin: auto;
+}
+
+#skills-inner {
+  display: inline-block;
+}
+#skills {
+  padding-top: 190px;
+  color:white;
+  text-align: center;
+}
+#skills span {
+  font-size: 40px;
+  margin: 0;
+  padding: 0;
+}
+#skills h3 {
+  font-family: 'Montserrat';
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+}
+#skillpanel {
+  max-width: 400px;
+  margin: auto;
+  padding-top:40px;
+}
+#skillpanel p {
+  font-family: 'Montserrat';
+  font-size: 18px;
+}
+#skillpanel a {
+  color:white;
+}
+
+#about {
+  padding-top: 190px;
+  text-align: center;
+  width:100%;
+}
+#about-inner {
+display:inline-block;
+  max-width: 600px;
+  color:white;
+  font-family: 'Montserrat';
+}
+#about-inner h1 {
+  margin: 0;
+  padding: 0;
+}
+#about-inner p {
+  padding-top:20px;
+}
+
+#contact {
+  text-align: center;
+  padding-top:140px;
+}
+#contact-inner {
+  color:white;
+  display:inline-block;
+  max-width: 700px;
+}
+#contact-inner p {
+  font-family: 'Montserrat';
+  padding-top:20px;
+}
+#contact-inner h1 {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  margin-top:100px;
+  background-color:rgb(9, 9, 9);
+  width:100%;
+  text-align: center;
+  height:auto;
+  color:white;
+  font-family: 'Montserrat';
+}
+footer p {
+  font-size: 20px;
+  padding-top:30px;
+}
+footer i {
+  color:white;
+  font-size:30px;
+  padding:10px 30px 20px 30px;
+}
 
 
-
-
-
-
+@media screen and (max-width: 1339px) {
+  #projects img {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 1155px) {
+  #projects {
+    padding:140px;
+  }
+  #projects p {
+    font-size: 20px;
+  }
+  #skills h1 {
+    margin-top:90px;
+  }
+  #shotgunfarmers {
+    margin-top:50px;
+  }
+  .elfsight-app-82789a50-4131-4067-a448-dfb332e2bdb7 {
+    width:600px;
+  }
+}
+@media screen and (max-width: 1059px) {
+  #vimeowidget {
+    display:none;
+  }
+  #projects {
+    margin: 0;
+    padding:40px;
+  }
+  #projects p {
+    font-size: 14px;
+  }
+  #projects img {
+    max-width:240px;
+  }
+  #sf-inner a {
+    padding:8px;
+  }
+  #shotgunfarmers {
+    display:block;
+  }
+  #sf-inner {
+    text-align: left;
+    max-width:600px;
+    margin:auto;
+  }
+  #nfs-inner a {
+    padding:0;
+  }
+  #needforspeed {
+    display:block;
+    padding-top:200px;
+  }
+  #nfs-inner {
+    text-align: right;
+    max-width: 600px;
+    margin: auto;
+  }
+}
+@media screen and (max-width:980px) {
+  #navbar {
+    display:none;
+  }
+  #navbutton {
+    display: block;
+  }
+}
+@media screen and (min-width:981px) {
+  #navbar
+  {
+    display:block;
+  }
+  #navbutton {
+    display:none;
+  }
+}
 @media screen and (max-width:800px) {
 
   #projects {
@@ -167,22 +372,37 @@ h2 {
     max-width: 240px;
     border: 2px solid white;
   }
+  #vimeowidget {
+    display:none;
+    visibility: hidden;
+  }
+  #skills-inner h3 {
+    font-size: 20px;
+  }
+  #about-inner {
+    max-width: 420px;
+  }
+  #shotgunfarmers {
+    margin-top:30px;
+  }
+  #skills {
+    margin-top:80px;
+  }
 }
-@media screen and (max-width:720px) {
-  p {
-    font-size: 2vw;
+@media screen and (max-width:600px) {
+  #projects img {
+    max-width:160px;
   }
-  #home img {
-    width:200px;
+  #skills-inner h3 {
+    font-size: 16px;
   }
-}
-@media screen and (max-width:400px) {
-
-
-  #projects p {
-    min-width: 100px;
+  #skillpanel {
+    max-width:200px;
   }
-  #home img {
-    width:100px;
+  #skillpanel p {
+    font-size:14px;
+  }
+  #about-inner {
+    max-width: 200px;
   }
 }
