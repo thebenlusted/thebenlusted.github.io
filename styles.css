@@ -408,3 +408,47 @@ footer i {
     max-width: 200px;
   }
 }
+@media screen and (max-width:440px) {
+  #projects {
+    padding:0;
+    margin-left: 10px;
+    margin-right:10px;
+  }
+  #projects img {
+    max-width: 160px;
+    margin-left:10px;
+    margin-right:10px;
+  }
+}
+@media screen and (max-width:420px) {
+  #shotgunfarmers, #needforspeed {
+    display:block;
+  }
+  #sf-inner {
+    position: absolute;
+  }
+  #needforspeed {
+    margin-top:100px;
+  }
+  #shotgunfarmers p, #needforspeed p {
+    font-size:15px;
+    text-align: center;
+  }
+  #shotgunfarmers img, #needforspeed img {
+    margin:auto;
+  }
+  #shotgunfarmers h3, #needforspeed h3 {
+    display:none;
+  }
+  #role {
+    display:none;
+  }
+  footer p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width:380px) {
+  #projects img {
+    max-width:120px;
+  }
+}
