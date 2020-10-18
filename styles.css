@@ -282,6 +282,11 @@ footer i {
   color:white;
   font-size:30px;
   padding:10px 30px 20px 30px;
+  transition:all 0.4s;
+}
+
+footer i:hover {
+  background-color:#db4545;
 }
 
 
